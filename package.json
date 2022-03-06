@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "cy:run": "cypress run --env allure=true",
+        "allure:report": "allure generate allure-report --clean -o allure-results",
+        "test": "npm run cy:run"
+    },
+    "dependencies": {
+        "@shelex/cypress-allure-plugin": "^2.19.5",
+        "cypress": "^8.7.0"
+    },
+    "devDependencies": {
+        "cypress-xpath": "^1.6.2"
+    }
+}
